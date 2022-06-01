@@ -2,6 +2,6 @@
 
 document.getElementById("button").addEventListener("click", flip)
 
-function flip{
-    
+function flip(){
+
 }
