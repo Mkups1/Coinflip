@@ -1,0 +1,16 @@
+
+HTML{
+    background: url("img/Coin-background.png")no-repeat center fixed;
+    background-size: cover;
+}
+#body{
+    text-align: center;
+}
+
+button{
+    font-size: 50px;
+
+}
+#result{
+    font-size: 50px;
+}
