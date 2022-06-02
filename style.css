@@ -14,3 +14,9 @@ button{
 #result{
     font-size: 50px;
 }
+#links{
+    text-align: center;
+}
+a{
+    color:black;
+}
