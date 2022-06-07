@@ -1,0 +1,36 @@
+HTML{
+    background:lightblue;
+}
+#links{
+    text-align:center;
+}
+
+#scores{
+    display:flex;
+    flex:1;
+    text-align:center;
+    padding-left:250px;
+    padding-top:50px;
+    font-size:25px;
+}
+#opponent{
+    padding-left: 475px;
+}
+
+#rock-image{
+    width:150px;
+    text-align:left;
+    padding-left:50px;
+    padding-top:100px;
+}
+
+#paper-image{
+    width:100px;
+    padding-left: 50px;
+    padding-top:100px;
+}
+#scissors-image{
+    width:75px;
+    padding-left: 50px;
+    padding-top:100px;
+}
