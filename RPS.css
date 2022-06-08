@@ -17,8 +17,14 @@ HTML{
     padding-left: 475px;
 }
 
+#images{
+    display:flex;
+    flex:1;
+}
+
 #rock-image{
     width:150px;
+    height: 150px;
     text-align:left;
     padding-left:50px;
     padding-top:100px;
@@ -26,11 +32,27 @@ HTML{
 
 #paper-image{
     width:100px;
+    height: 150px;
     padding-left: 50px;
     padding-top:100px;
 }
 #scissors-image{
-    width:75px;
+    width:100px;
+    height: 150px;
     padding-left: 50px;
     padding-top:100px;
+}
+
+#check{
+    width:100px;
+    height: 150px;
+    padding-top:100px;
+    padding-right: 275px;
+}
+
+#pick{
+    display:flex;
+    flex:1;
+    padding-left:250px;
+    font-size:25px;
 }
