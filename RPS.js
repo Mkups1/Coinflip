@@ -10,13 +10,15 @@ let oScoreEl = document.getElementById("o-score")
 let oScore = 0
 let messageEl = document.getElementById("message")
 let start = true
-let restartTime = setTimeout(startF, 3000)
+// let restartTime = setTimeout(startRock, 3000)
 
 function startF(){
     paperEl.style.display="block"
     scissorsEl.style.display="block"
+    rockEl.style.display="block"
+    checkmarkEl.src = "img/checkmark.png"
     start = true
-    clearTimeout(restartTime)
+    // clearTimeout(restartTime)
 }
 
 
@@ -47,7 +49,7 @@ function rockAns(){
             messageEl.innerHTML = "Tie!"
         }
         if(start === false){
-            restartTime
+            setTimeout(startF, 3000)
         }
 
     }    
@@ -60,6 +62,7 @@ function paperAns(){
     console.log(opAns)
     rockEl.style.display="none"
     scissorsEl.style.display="none"
+    start = false
     if(opAns <= 0.33){
         checkmarkEl.src = "img/scissors.png"
         oScore++
@@ -74,6 +77,9 @@ function paperAns(){
         pScoreEl.innerHTML = pScore
         messageEl.innerHTML = "You Win!"
     }
+    if(start === false){
+        setTimeout(startF, 3000)
+    }
 
 
 }
@@ -84,6 +90,7 @@ function scissorsAns(){
     console.log(opAns)
     paperEl.style.display="none"
     rockEl.style.display="none"
+    start = false
     if(opAns <= 0.33){
         checkmarkEl.src = "img/scissors.png"
         messageEl.innerHTML = "Tie!"
@@ -97,6 +104,9 @@ function scissorsAns(){
         oScore++
         oScoreEl.innerHTML = oScore
         messageEl.innerHTML = "You Lose!"
+    }
+    if(start === false){
+        setTimeout(startF, 3000)
     }
 
 
