@@ -17,5 +17,6 @@ function flip(){
         coinResultEl.src = "img/Coin-heads.png"
     } else{
         resultEl.innerHtml = "side"
+        coinResultEl.src = "img/Coin-side.png"
     }
 }
